@@ -82,5 +82,6 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: stories_production
 
