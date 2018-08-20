@@ -11,9 +11,22 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
+  <header>
+    <div class="supporting-section">
+      <h3>Header menu</h3>
+      <ul>
+        <li><%= link_to "Home", "/" %></li>
+        <li><%= link_to "About", "/pages/about" %></li>
+        <li>Menu item 3</li>
+      </ul>
+    </div>
+  </header>
 
   <body>
     <%= yield %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
+  <footer>
+    <h4>Footer</h4>
+  </footer>
 </html>
